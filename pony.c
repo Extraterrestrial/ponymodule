@@ -49,7 +49,7 @@ static int device_open(struct inode * inode, struct file * file) {
   int random = 0;
   
 	get_random_bytes(&random, 1);
-	random = random % 8 + 1;
+	random = random % PHRASE_COUNT + 1;
 
 	switch(random) {
 	case 1:
