@@ -5,14 +5,12 @@ This module generates random phrases from the special character device (/dev/pon
 Type 'make' to compile.
 
 How to use:
-Load the module:
-# insmod pony.ko
+Load the module (as root):
+insmod pony.ko
 
-Then let's check a major number:
-$ dmesg | tail -2
+Then let's check a major number. Type 'dmesg | tail -2'.
 
 ...and create a device as dmesg said.
 
-Done. You can generate a phrase by command:
-$ cat /dev/pony
+Done. You can generate a phrase by command 'cat /dev/pony'.
 
